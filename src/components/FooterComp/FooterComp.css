@@ -1,0 +1,34 @@
+#footercomp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color:whitesmoke;    
+}
+.icon{
+    font-size:3.5vh;
+
+}
+.text{
+    font-size:1.8vh;   
+    font-family: f1;
+    height:2.69vh;
+    width:8vh;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;   
+    position: relative;
+    font-weight: 300;
+}
+.back
+{
+    height:2.69vh;
+    width:0vh;
+    background-color: rgba(245, 245, 245, 0.297);    
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}

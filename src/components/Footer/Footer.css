@@ -1,0 +1,14 @@
+#footermain{
+    height:9vh;
+    width:96vw;
+    background-color: white; 
+    position:fixed;
+    bottom:2vw;
+    margin-left:2vw;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.472);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
