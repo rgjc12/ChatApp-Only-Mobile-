@@ -17,6 +17,7 @@ function Shorts() {
    
     useGSAP(() => {
         gsap.to("#navbar", {
+            rotateX: "-90deg",
             y: "-31vw",           
             duration: 4.2,
             ease: "expo.out",

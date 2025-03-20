@@ -45,7 +45,7 @@
   .interaction-buttons {
     position: absolute;
     right: 1.5vh;
-    bottom: 22%;
+    bottom: 29%;
     display: flex;
     flex-direction: column;
     gap: 24px;
