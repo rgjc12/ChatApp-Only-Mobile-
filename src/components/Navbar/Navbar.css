@@ -6,7 +6,7 @@
     position: fixed;
     border:none;
     perspective: 1500px;
-    transform-origin: 50%,50%;
+    transform-origin: 50%,20%;
     display: flex;
     align-items: center;
     justify-content: space-between;

@@ -17,9 +17,9 @@ function Shorts() {
    
     useGSAP(() => {
         gsap.to("#navbar", {
-            rotateX: "-108deg",
-            y: "-31vw",           
-            duration: 4.89,
+            rotateX: "-120deg",
+            y: "-35vw",           
+            duration: 5.2,
             ease: "expo.out",
         });
     }, []);
