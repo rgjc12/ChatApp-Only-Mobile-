@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./Footer.css";
 import FooterComp from "../FooterComp/FooterComp";
 
-const Footer = () => {
-  const [activeIndex, setActiveIndex] = useState(3);
+const Footer = ({num}) => {
+  const [activeIndex, setActiveIndex] = useState(num);
 
   let comps = [
     {

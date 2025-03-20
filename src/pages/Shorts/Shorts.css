@@ -1,0 +1,125 @@
+/* Main Container */
+.shorts-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000;
+  }
+  
+  
+  .shorts-swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  
+  .slide-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Media Container */
+  .media-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .media-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  .interaction-buttons {
+    position: absolute;
+    right: 1.5vh;
+    bottom: 22%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    z-index: 10;
+  }
+  
+  .interaction-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+  
+  .interaction-button button {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 50%;
+    width: 5.5vh;
+    height: 5.5vh;
+    display: flex;
+    font-size: 2vh;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .interaction-button button:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.05);
+  }
+  
+  .interaction-button button:active {
+    transform: scale(0.95);
+  }
+  
+  .interaction-button span {
+    margin-top: 0.5vh;
+    font-size: 1.5vh;
+    font-weight: 500;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .interaction-buttons {
+      right: 2vh;
+    }
+    
+    .interaction-button button {
+      width:5.5vh;
+      height: 5.5vh;
+    }
+    
+    .interaction-button span {
+      font-size: 2vh;
+      font-family: f1;
+    }
+  }
+  
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .slide-content {
+    animation: fadeIn 0.5s ease;
+  }
+  
+  
+  .swiper-slide-active {
+    transition: transform 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  

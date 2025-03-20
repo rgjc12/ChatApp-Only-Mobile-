@@ -36,9 +36,9 @@ const Navbar = () => {
         <img src="p1.png" alt="logo" />
         </div>
         <div id="navlefttext">
-        <div id="navltext" >
+      
             <div className="navltext1" ref={textRef}>{greeting},</div>            
-        </div>
+        
         <div id="navltext2">
           <h1>User</h1>
         </div>

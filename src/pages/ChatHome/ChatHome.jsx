@@ -10,7 +10,7 @@ function ChatHome() {
     <div id='chatHome'>
         <Navbar/>     
       <video id="v1" src="/Videoes/v1.mp4" autoPlay muted loop/>
-      <Footer/>
+      <Footer num={3}/>
     </div>
     </>
   )

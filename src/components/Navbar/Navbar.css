@@ -1,10 +1,12 @@
 #navbar{
     width: 96vw;
     height: 12vh;
-    background-color: rgba(255, 255, 255, 0.307);
+    background-color: rgba(255, 255, 255, 0.323);
     backdrop-filter: blur(1px);
     position: fixed;
     border:none;
+    perspective: 1500px;
+    transform-origin: 50%,50%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,6 +14,7 @@
     margin-top: 2vw;
     border-radius: 10px;
     overflow-y: hidden;
+    z-index: 1000;
 }
 #navleft{
   display: flex;  
@@ -24,28 +27,29 @@
     margin-left: 2vw;
     margin-top: 2vw;
 }
-#navltext{
-    height:5.6vw;
-    width:auto;
-    cursor: pointer;
-    color:whitesmoke;
-    font-family: xx;
-    font-size: 4.5vw;
-    font-weight: 400;
-    overflow-y: hidden;    
+#navlefttext{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
+
 #navltext2 h1{
-    height:8.9vw;
+    height:8.9vw;    
     width:auto;
     cursor: pointer;
     color:rgb(219, 214, 214);
     font-family: f1;
+    font-size: 8.8vw;
     font-weight: 500;
     overflow-y: hidden;
+    margin:0;
 }
 .navltext1{
     height:5.6vw;   
     width:auto;
+    color:whitesmoke;
+    font-size: 4.9vw;
     margin:0;
     pointer-events: none;  
     font-family: f1; 

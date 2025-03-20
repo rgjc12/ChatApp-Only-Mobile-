@@ -18,9 +18,9 @@ const FooterComp = ({ icon, text, link, onClick, isActive }) => {
   return (
     <Link to={link} id="footercomp" onClick={onClick}>
       <div className="icon">{icon}</div>
-      <p className="text">
+      <div className="text">
         {text} <div className="back" ref={backRef}></div>
-      </p>
+      </div>
     </Link>
   );
 };
