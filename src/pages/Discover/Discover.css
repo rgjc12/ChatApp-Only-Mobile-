@@ -122,3 +122,63 @@
   #vid video{
     width:100%;
     }
+#page2{
+  height:100vh;
+  width:100vw; 
+}
+#page2top{
+  height:10vh;
+  width:100vw;  
+  margin-top: 10vh;
+  font-family:qw;
+  font-size: 3.9vw;
+  font-weight: 500;
+}
+#page2-text span{
+  color: rgba(105, 105, 105, 0.517);
+}
+#page2bottom{
+  height:90vh;
+  width:100vw; 
+
+}
+#page2-left{
+  height:50vh;
+  width:90vw; 
+  margin-left: 5vw;
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+#page2-left img{
+  height:100%;
+  width:100%; 
+  object-fit: cover;
+  z-index: -1;
+}
+.p2vid1{
+  height:100%;
+  width:100%; 
+  position: absolute;
+  top:5vw;
+  left:5vw;
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+}
+.p2vid1 video{
+  height:35vh;
+  width:60vw;
+  object-fit: cover;
+}
+.p2vid2{
+  height:25vh;
+  width:45vw;
+  position: absolute;
+  bottom:5vw;
+  right:5vw;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+.p2vid2 video{
+  height:100%;
+  width:100%;
+  object-fit: cover;
+}

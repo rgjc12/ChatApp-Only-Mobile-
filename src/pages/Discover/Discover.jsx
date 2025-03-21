@@ -44,7 +44,7 @@ function Discover() {
     { url: "/Images/5.avif", top: "43%", left: "38%", Act: false },    
   ];
 
-
+  const page2text=useRef(null);
 
   const [images, setImages] = useState(initialImages);
   const scrollThresholds = [10, 55, 89, 100, 170, 230]; 
@@ -108,6 +108,60 @@ gsap.to("#vid",{
 })
 
 })
+useGSAP(()=>{
+  var tl2 = gsap.timeline({
+    scrollTrigger: {
+        trigger:"#f1 h1",       
+        start: "top -50%",
+        end: "top -75%",
+        scrub: 3,       
+    }
+  })
+  tl2.to("#discovermain", {
+    backgroundColor: "#fff",
+  })
+gsap.from("#page2-text h1",{
+  x:"-9vh",
+  opacity:0,
+  scrollTrigger:{
+    trigger:"#page2-text h1",      
+      start:"top 52%",
+      end:"top 12%",
+        scrub:2,
+    
+  }  
+})
+})
+useGSAP(()=>{
+  gsap.to("#page2-left",{
+    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+    scrollTrigger:{
+      trigger:"#page2-left",
+      start:"top 52%",
+      end:"top 12%",
+        scrub:2,       
+  } 
+  })
+  gsap.to(".p2vid1",{
+    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+    scrollTrigger:{
+      trigger:"#page2-left",
+      start:"top 42%",
+      end:"top 8%",
+        scrub:2,           
+  } 
+})
+gsap.to(".p2vid2",{
+  clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+  scrollTrigger:{
+    trigger:"#page2-left",
+    start:"top 42%",
+    end:"top 7%",
+    scrub:2,
+  }
+})
+
+})
 
 
   return (
@@ -145,7 +199,17 @@ gsap.to("#vid",{
          </div>
 <div id="page2">
   <div id="page2top">
-    <div id="page2-text">
+    <div id="page2-text" ref={page2text}>
+      <h1>We Are <span>August </span>Healthcare</h1>
+    </div>
+  </div>
+  <div id="page2bottom">
+  <div id="page2-left">
+    <img src="./Images/1.png" alt="1"/>
+      <div className="p2vid1"><video src="./Videoes/v6.mp4" autoPlay muted loop></video></div>
+      <div className="p2vid2"><video src="./Videoes/v7.mp4" autoPlay muted loop></video></div>
+    </div>
+    <div id="page2-right">
       
     </div>
   </div>
