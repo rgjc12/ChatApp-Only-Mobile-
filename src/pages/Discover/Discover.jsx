@@ -99,9 +99,8 @@ gsap.to("#f2",{
 gsap.to("#vid",{
   width:"90%",
   scrollTrigger:{
-    trigger:"#f1 h1",
-      scroller:".main",
-      start:"top 39%",
+    trigger:"#f1 h1",      
+      start:"top 36%",
       end:"top 3%",
         scrub:2,
     
@@ -142,7 +141,7 @@ gsap.to("#vid",{
         <h6>HEAL,GROW,HAPPY</h6>
         <h6>BASED IN INDIA.</h6>
       </div>
-       <video class="cani" autoplay muted loop src="./Videoes/v5.mp4"></video>
+       <video class="cani" autoPlay muted loop src="./Videoes/v5.mp4"></video>
          </div>
       </div>
       <Footer num={2}/>
