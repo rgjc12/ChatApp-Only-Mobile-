@@ -141,8 +141,16 @@ gsap.to("#vid",{
         <h6>HEAL,GROW,HAPPY</h6>
         <h6>BASED IN INDIA.</h6>
       </div>
-       <video class="cani" autoPlay muted loop src="./Videoes/v5.mp4"></video>
+       <video className="cani" autoPlay muted loop src="./Videoes/v5.mp4"></video>
          </div>
+<div id="page2">
+  <div id="page2top">
+    <div id="page2-text">
+      
+    </div>
+  </div>
+</div>
+
       </div>
       <Footer num={2}/>
     </div>
