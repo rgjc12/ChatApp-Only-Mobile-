@@ -1,0 +1,121 @@
+#discovermain{
+    width: 100vw;
+    height: 190vh;
+    background-color: #1d1d1d;
+    padding-top: 40vh;
+}
+#page1-text{
+    height:42vh;
+    width:100%;     
+  }
+  #f1{
+    position:absolute;
+    left:21%;
+    height:16.8vh;
+    width:58%;
+    text-align: center;
+    -webkit-transform-origin: left;
+        -ms-transform-origin: left;
+            transform-origin: left;
+    cursor: pointer;
+    overflow:hidden;    
+
+  }
+  #f1 h1{
+    height:16.8vh;
+    -webkit-transform-origin: left;
+        -ms-transform-origin: left;
+            transform-origin: left;
+     text-align: center;
+    font-size:8.1vh;
+    font-family:qw;
+    color:white;
+    font-weight: 600;
+    margin-top: 0;
+    margin-left: 0vw;
+    margin-bottom: 0vh;
+  }
+  #f2{
+    height:16.8vh;
+     position:absolute;
+    -webkit-transform-origin: left;
+        -ms-transform-origin: left;
+            transform-origin: left;
+    top:46vh;
+    left:7%;
+    width:87%;
+    text-align: center;
+    cursor: pointer;
+    overflow:hidden;  
+  }
+  #f2 h2{
+    -webkit-transform-origin: left;
+        -ms-transform-origin: left;
+            transform-origin: left;
+    height:16.8vh;
+    font-size:8.1vh;
+    font-family:qw;
+    color:white;
+    font-weight:600;
+    margin-top: 1vh;
+    margin-left: 1vw;
+    margin-bottom: 0;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+  }
+  #p1img {
+    height:50vh;
+    width: 80vw;    
+    position: absolute;
+    top: 25vh;
+    left: 10vw;
+    z-index: 2;
+    padding-top:10vw;   
+}
+#p1img img {
+    height:21vh;
+    width:15vh;
+    object-fit: cover;    
+    border-radius: 5px;
+}
+#vid{
+    width:54%;
+    position:relative;
+    left:50%;
+    -webkit-transform:translate(-50%,0);
+        -ms-transform:translate(-50%,0);
+            transform:translate(-50%,0);
+    background-color: transparent;
+  }
+  #vid-text{
+    font-family: "Abel", sans-serif;
+    color:white;
+    height:8vh;
+    font-weight: 100;
+    font-size:2.9vW;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom:0;
+    
+  }
+  #vid-text h6{
+    margin:0.2vh;
+  }
+  #vid video{
+    width:100%;
+    }
+    

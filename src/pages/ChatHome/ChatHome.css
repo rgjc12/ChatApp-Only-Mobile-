@@ -10,3 +10,20 @@
     object-fit: cover;    
 
 }
+#chatusbtn{
+    position: absolute;
+    top: 84%;
+    left: 79%;
+    transform: translate(-50%,-50%);
+    width:17vh;
+    height: 5vh;
+    border-radius: 10px;
+    font-size: 2vh;
+    font-family:f1;
+    color: #fff;
+    background-color: rgba(245, 245, 245, 0.309);
+    backdrop-filter: blur(7px);
+    border: none;
+    cursor: pointer;   
+   
+}

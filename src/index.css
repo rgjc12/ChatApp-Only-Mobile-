@@ -11,3 +11,11 @@ body{
     font-family: f2;
     src: url(/Fonts/f2woff2);
 }
+@font-face {
+    font-family: q1;
+    src: url(/Fonts/q1.woff2);
+}
+@font-face {
+    font-family: qw;
+    src: url(/Fonts/qw.ttf);
+}
