@@ -160,6 +160,20 @@ gsap.to(".p2vid2",{
     scrub:2,
   }
 })
+gsap.from(".up h2",{
+  opacity:0,
+  y:150,
+  
+  ease: "back.out(1.4)",
+    scrollTrigger:{
+      trigger:".btm-text",    
+      start:"top 63%",
+        end:"top 5%",
+        scrub:2,
+       stagger:.19,      
+
+    }
+    });
 
 })
 
@@ -210,9 +224,18 @@ gsap.to(".p2vid2",{
       <div className="p2vid2"><video src="./Videoes/v7.mp4" autoPlay muted loop></video></div>
     </div>
     <div id="page2-right">
-      
+    <div className="btm-text">
+             <div className="up"><h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We are a mental health app.</h2></div>
+             <div className="up"><h2>dedicated to providing compassionate</h2></div>
+             <div className="up"><h2>&nbsp;&nbsp;and personalized support. With</h2></div>
+             <div className="up"><h2>&nbsp;&nbsp;innovative tools and expert guidance</h2></div>
+             <div className="up"><h2>&nbsp;&nbsp;navigate life's challenges.</h2></div>            
+           </div>
     </div>
   </div>
+</div>
+<div id="page3">
+  
 </div>
 
       </div>

@@ -3,7 +3,7 @@
 }
 #discovermain{
     width: 100vw;
-    height: 400vh;
+   min-height: 500vh;
     background-color: #1d1d1d;
     padding-top: 40vh;
    
@@ -123,8 +123,8 @@
     width:100%;
     }
 #page2{
-  height:100vh;
-  width:100vw; 
+  min-height:120vh;
+  width:100vw;   
 }
 #page2top{
   height:10vh;
@@ -149,6 +149,7 @@
   position: relative;
   overflow: hidden;
   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  margin-bottom: 4vh;
 }
 #page2-left img{
   height:100%;
@@ -181,4 +182,32 @@
   height:100%;
   width:100%;
   object-fit: cover;
+}
+#page2-right{ 
+  overflow-x: hidden;
+  height:40vh;  
+  z-index: 2;
+  font-family: qw;
+  font-size: 3.96vw;
+  
+}
+.btm-text .up {
+  height:5.7vh;  
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+ .btm-text .up h2{ 
+  height:5.7vh;  
+  line-height: 1;
+  letter-spacing: -1px;
+  display: inline-block;
+  overflow: hidden;
 }
