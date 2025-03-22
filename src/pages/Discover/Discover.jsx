@@ -319,9 +319,6 @@ useGSAP(() => {
     },
   });
 });
-
-
-
 useGSAP(()=>{
   gsap.to(".marque",{
     transform: "translateX(-200%)",
@@ -336,6 +333,20 @@ useGSAP(()=>{
     repeat:-1
   })
 })
+
+
+
+
+const [activeIndex, setActiveIndex] = useState(-1);
+
+const handleTouchStart1 = (tindex) => {
+  setActiveIndex(tindex);
+};
+
+const handleTouchEnd1 = () => {
+  setActiveIndex(-1);
+};
+
 
 
 
@@ -409,8 +420,8 @@ useGSAP(()=>{
     </div>
     <div className="plancard">
   {plandata.map((elem, index) => (
-    <div className={`pcard pcard-${index}`} key={index} >
-      <PlanCards data={elem} index={index} />
+    <div className={`pcard pcard-${index}`} key={index} onTouchStart={() => handleTouchStart1(index)} onTouchEnd={handleTouchEnd1} >
+      <PlanCards data={elem} index={index} activeIndex={activeIndex} />
     </div>
   ))}
 </div>
@@ -468,10 +479,16 @@ useGSAP(()=>{
         </div>
    </div>
   </div>
-  
+  <div id="page4">
+    
+  </div>
+
+
+
+
+
+
 </div>
-
-
       </div>      
    
   )
