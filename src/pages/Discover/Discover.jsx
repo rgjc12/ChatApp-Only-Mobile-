@@ -247,7 +247,7 @@ gsap.from(".up h2",{
         <h6>HEAL,GROW,HAPPY</h6>
         <h6>BASED IN INDIA.</h6>
       </div>
-       <video className="cani" autoPlay muted loop src="./Videoes/v5.mp4"></video>
+       <video className="cani"  src="./Videoes/v5.mp4" autoPlay muted loop></video>
          </div>
 <div id="page2">
   <div id="page2top">
