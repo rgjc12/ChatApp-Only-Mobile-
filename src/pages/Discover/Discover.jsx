@@ -7,7 +7,7 @@ import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Lenis from 'lenis';
 import { useLocation, useNavigate } from 'react-router-dom';
-
+import PlanCards from '../../components/PlanCards/PlanCards';
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
@@ -46,19 +46,21 @@ function Discover() {
   const handleTouchStart = (e) => {
     touchStartX.current = e.touches[0].clientX;
   };
-
   const handleTouchEnd = (e) => {
     touchEndX.current = e.changedTouches[0].clientX;
     detectSwipe();
   };
-
   const detectSwipe = () => {
     if (touchStartX.current && touchEndX.current) {
       const swipeDistance = touchEndX.current - touchStartX.current;
 
-      if (swipeDistance > 10) {
+      if (swipeDistance > 25) {
         // ✅ If swipe is right, navigate to /home
         navigate("/");
+      }
+      if (swipeDistance < -25) {
+        // ✅ If swipe is right, navigate to /home
+        navigate("/shorts");
       }
     }
   };
@@ -71,8 +73,6 @@ function Discover() {
       document.removeEventListener("touchend", handleTouchEnd);
     };
   }, []);
-
-
 
   let initialImages = [
     { url: "/Images/1.avif", top: "30%", left: "15%", Act: false },
@@ -212,8 +212,126 @@ gsap.from(".up h2",{
 
     }
     });
-
+    gsap.to("#page-two-lastbut .line",{
+      opacity:1,
+      width:"49vw",
+      scrollTrigger:{
+        trigger:"#page-two-lastbut",
+        start:"top 63%",
+        end:"top 45%",
+        scrub:2,
+        ease:"expo.out",        
+      }
+    })
+    gsap.to("#page-two-lastbut .pagetwolastbut", {
+      width: "18vh",
+      borderRadius: "50px",    
+      scrollTrigger: {
+        trigger: "#page-two-lastbut",
+        start: "top 63%",
+        end: "top 45%",
+        scrub: 2,     
+      },
+    });
+    
+    gsap.to("#page-two-lastbut .pagetwolastbut .arrow",{
+      rotate:45,
+      scrollTrigger:{
+        trigger:"#page-two-lastbut",
+        start:"top 63%",
+        end:"top 45%",
+      }
+    })
+    gsap.to("#page-two-lastbut .pagetwolastbut .p2buttext",{
+      width:"10vh",
+      opacity:1,      
+      scrollTrigger:{
+        trigger:"#page-two-lastbut",
+        start:"top 63%",
+        end:"top 45%",
+        scrub:2,        
+      }
+    })
 })
+useGSAP(()=>{
+  var tl2 = gsap.timeline({
+    scrollTrigger: {
+        trigger:"#page3",       
+        start: "top 25%",
+        end: "top -2%",
+        scrub: 3,       
+    }
+  })
+  tl2.to("#discovermain", {
+    backgroundColor: "#1d1d1d",
+  })
+})
+
+const plandata = [
+  {
+    name: "Basic Plan",
+    features: [
+      "AI Chat Support : Limited",
+      "Therapist : NO",
+      "Guided Meditation : Limited",
+      "Sleep Analysis : NO",
+      "Period : 7 days",
+    ],
+    price: "Free Trial",
+    color: "red",
+  },
+  {
+    name: "Pro Plan",
+    features: [
+      "AI Chat Support : Full",
+      "Therapist : 2 Sits/Month",
+      "Meditation : Full Access",
+      "Sleep Analysis : Basic",
+      "Period : 1 Month",
+    ],
+    price: "₹299",
+    color: "yellow",
+  },
+  {
+    name: "Premium Plan",
+    features: [
+      "AI Chat Support:On Priority",
+      "Therapist : 4 Sits/Month",
+      "Meditation : Full Access",
+      "Sleep Analysis :Adv.Insights",
+      "Period : 1 Month",
+    ],
+    price: "₹799",
+    color: "green",
+  },
+];
+useGSAP(() => {
+  gsap.from([".pcard-0", ".pcard-1", ".pcard-2"], {
+    opacity: 0,
+    x: "90vw",
+    duration: 1,
+    stagger: 0.39, 
+    scrollTrigger: {
+      trigger: ".plancard",
+      start: "top 48%",
+      end: "top -28%",
+      scrub: 2,       
+    },
+  });
+});
+
+
+
+useGSAP(()=>{
+  gsap.to(".marque",{
+    transform: "translateX(-200%)",
+    duration:2.5,
+    ease: "none",
+    repeat:-1
+  })
+})
+
+
 
 
   return (
@@ -272,16 +390,84 @@ gsap.from(".up h2",{
     </div>
   </div>
   <div id="page-two-lastbut">
-
+          <div className="line"></div>
+          <button className="pagetwolastbut">
+          <div className="p2buttext">View More</div><div className="arrow"><i className="ri-arrow-right-up-line"></i></div>
+          </button>
   </div>
 </div>
 <div id="page3">
-
+  <div className="plans">
+    <div className="plans-head">
+      <h1><span>Our </span> Plans&nbsp;<i className="ri-arrow-right-up-line"></i></h1>
+    </div>
+    <div className="plancard">
+  {plandata.map((elem, index) => (
+    <div className={`pcard pcard-${index}`} key={index} >
+      <PlanCards data={elem} index={index} />
+    </div>
+  ))}
 </div>
 
-      </div>
-      
     </div>
+   <div className="move">
+   <div className="marque">
+          <h3>We Care For You</h3><i className="ri-arrow-right-line"></i>          
+        </div>
+        <div className="marque">
+          <h3>We Care For You</h3><i className="ri-arrow-right-line"></i>          
+        </div>
+        <div className="marque">
+          <h3>We Care For You</h3><i className="ri-arrow-right-line"></i>          
+        </div>
+        <div className="marque">
+          <h3>We Care For You</h3><i className="ri-arrow-right-line"></i>          
+        </div>
+        <div className="marque">
+          <h3>We Care For You</h3><i className="ri-arrow-right-line"></i>          
+        </div>
+   </div>
+   <div className="move">
+   <div className="marque">
+          <h3>We Care For You</h3><i className="ri-arrow-left-line"></i>          
+        </div>
+        <div className="marque">
+          <h3>We Care For You</h3><i className="ri-arrow-left-line"></i>          
+        </div>
+        <div className="marque">
+          <h3>We Care For You</h3><i className="ri-arrow-left-line"></i>          
+        </div>
+        <div className="marque">
+          <h3>We Care For You</h3><i className="ri-arrow-left-line"></i>          
+        </div>
+        <div className="marque">
+          <h3>We Care For You</h3><i className="ri-arrow-left-line"></i>          
+        </div>
+   </div>
+   <div className="move">
+   <div className="marque">
+          <h3>We Care For You</h3><i className="ri-arrow-right-line"></i>          
+        </div>
+        <div className="marque">
+          <h3>We Care For You</h3><i className="ri-arrow-right-line"></i>          
+        </div>
+        <div className="marque">
+          <h3>We Care For You</h3><i className="ri-arrow-right-line"></i>          
+        </div>
+        <div className="marque">
+          <h3>We Care For You</h3><i className="ri-arrow-right-line"></i>          
+        </div>
+        <div className="marque">
+          <h3>We Care For You</h3><i className="ri-arrow-right-line"></i>          
+        </div>
+   </div>
+  </div>
+  
+</div>
+
+
+      </div>      
+   
   )
 }
 

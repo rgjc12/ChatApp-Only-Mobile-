@@ -5,13 +5,12 @@
     background-color: #1d1d1d;
     padding-top: 40vh;
     overflow-x:hidden;
-    position:relative;
-   
+    position:relative;   
 }
 #page1-text{
     height:42vh;
     width:100vw;     
-    overflow-x:hidden;
+   
   }
   #f1{
     position:absolute;
@@ -23,7 +22,7 @@
         -ms-transform-origin: left;
             transform-origin: left;
     cursor: pointer;
-    overflow:hidden;    
+    overflow:hidden;
 
   }
   #f1 h1{
@@ -48,8 +47,8 @@
         -ms-transform-origin: left;
             transform-origin: left;
     top:46vh;
-    left:7%;
-    width:87%;
+    left:4%;
+    width:91%;
     text-align: center;
     cursor: pointer;
     overflow:hidden;  
@@ -75,7 +74,7 @@
     -webkit-box-pack:center;
         -ms-flex-pack:center;
             justify-content:center;
-    overflow:hidden;
+   
   }
   #p1img {
     height:50vh;
@@ -214,3 +213,105 @@
   display: inline-block;
   overflow: hidden;
 }
+#page-two-lastbut{
+  height:9vh;
+  width:94vw;
+  margin-left: 3vw;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#page-two-lastbut .line{
+  height:2px;
+  width:0vw;
+  background-color: #1d1d1d;
+}
+#page-two-lastbut .pagetwolastbut{
+  height:8vh;
+  width:8vh;
+  background-color: #1d1d1d;
+  border-radius: 50%;
+  color:whitesmoke;  
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 1vw;  
+}
+#page-two-lastbut .pagetwolastbut .p2buttext{
+  width:0;
+  opacity:0;
+  color:whitesmoke; 
+  font-size: 1.72vh;
+  font-family: f1;
+  text-wrap: nowrap;
+}
+#page-two-lastbut .pagetwolastbut .arrow{
+  height:6vh;
+  width:6vh;
+  background-color: #1d1d1d;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 4.0vh;
+  color:whitesmoke;  
+}
+#page3{
+  height:210vh;
+  width:100vw;
+  margin-top: 6vh;
+  padding-top:2vh;
+}
+.plans-head{
+  height:26vh;
+  width:100vw; 
+  font-family: qw;
+  font-size: 10vw;
+  font-weight: 500; 
+  color:whitesmoke;  
+  margin-left: 2vh;
+}
+.plans-head span{
+  color:rgba(227, 221, 221, 0.596);
+}
+#page3 .plans{
+  height:195vh;
+  width:100vw;    
+}
+.move{
+  height:10vh;
+  width:100vw;
+  background-color: #D9FF06;
+  margin-top: 2vh;
+  font-family: xx; 
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  overflow:hidden;
+}
+.marque{
+  height:10vh;
+  width:500vw;
+  background-color: #D9FF06;
+  margin-top: 2vh;
+  font-family: xx;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin:0; 
+}
+.marque h3{
+  font-size: 5.9vw;
+    width:35vh;
+  flex-wrap: nowrap;
+  margin:0;
+}
+.marque i{
+  font-size:10.2vw;  
+  flex-wrap: nowrap; 
+  margin:0;
+}
+
+
+
+

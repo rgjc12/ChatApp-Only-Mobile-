@@ -19,3 +19,7 @@ body{
     font-family: qw;
     src: url(/Fonts/qw.ttf);
 }
+@font-face {
+    font-family: xx;
+    src: url(/Fonts/xx.ttf);
+}
