@@ -289,7 +289,7 @@
   justify-content: center;
   overflow:hidden;
 }
-.marque{
+.marque,.marque1{
   height:10vh;
   width:500vw;
   background-color: #D9FF06;
@@ -300,13 +300,13 @@
   justify-content: center;
   margin:0; 
 }
-.marque h3{
+.marque h3,.marque1 h3{
   font-size: 5.9vw;
     width:35vh;
   flex-wrap: nowrap;
   margin:0;
 }
-.marque i{
+.marque i,.marque1 i{
   font-size:10.2vw;  
   flex-wrap: nowrap; 
   margin:0;

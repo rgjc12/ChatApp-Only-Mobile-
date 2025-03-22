@@ -329,6 +329,12 @@ useGSAP(()=>{
     ease: "none",
     repeat:-1
   })
+  gsap.to(".marque1",{
+    transform: "translateX(200%)",
+    duration:2.5,
+    ease: "none",
+    repeat:-1
+  })
 })
 
 
@@ -411,19 +417,19 @@ useGSAP(()=>{
 
     </div>
    <div className="move">
-   <div className="marque">
+   <div className="marque1">
           <h3>We Care For You</h3><i className="ri-arrow-right-line"></i>          
         </div>
-        <div className="marque">
+        <div className="marque1">
           <h3>We Care For You</h3><i className="ri-arrow-right-line"></i>          
         </div>
-        <div className="marque">
+        <div className="marque1">
           <h3>We Care For You</h3><i className="ri-arrow-right-line"></i>          
         </div>
-        <div className="marque">
+        <div className="marque1">
           <h3>We Care For You</h3><i className="ri-arrow-right-line"></i>          
         </div>
-        <div className="marque">
+        <div className="marque1">
           <h3>We Care For You</h3><i className="ri-arrow-right-line"></i>          
         </div>
    </div>
@@ -445,19 +451,19 @@ useGSAP(()=>{
         </div>
    </div>
    <div className="move">
-   <div className="marque">
+   <div className="marque1">
           <h3>We Care For You</h3><i className="ri-arrow-right-line"></i>          
         </div>
-        <div className="marque">
+        <div className="marque1">
           <h3>We Care For You</h3><i className="ri-arrow-right-line"></i>          
         </div>
-        <div className="marque">
+        <div className="marque1">
           <h3>We Care For You</h3><i className="ri-arrow-right-line"></i>          
         </div>
-        <div className="marque">
+        <div className="marque1">
           <h3>We Care For You</h3><i className="ri-arrow-right-line"></i>          
         </div>
-        <div className="marque">
+        <div className="marque1">
           <h3>We Care For You</h3><i className="ri-arrow-right-line"></i>          
         </div>
    </div>
