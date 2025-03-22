@@ -1,16 +1,16 @@
-*{
-    overflow-x:hidden;
-}
+
 #discovermain{
     width: 100vw;
    min-height: 500vh;
     background-color: #1d1d1d;
     padding-top: 40vh;
+    overflow-x:hidden;
    
 }
 #page1-text{
     height:42vh;
-    width:100%;     
+    width:100vw;     
+    overflow-x:hidden;
   }
   #f1{
     position:absolute;
@@ -38,6 +38,7 @@
     margin-top: 0;
     margin-left: 0vw;
     margin-bottom: 0vh;
+    overflow:hidden;
   }
   #f2{
     height:16.8vh;
@@ -73,6 +74,7 @@
     -webkit-box-pack:center;
         -ms-flex-pack:center;
             justify-content:center;
+    overflow:hidden;
   }
   #p1img {
     height:50vh;

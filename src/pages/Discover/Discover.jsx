@@ -36,6 +36,44 @@ function Discover() {
 
 
 
+
+
+
+
+  const touchStartX = useRef(null);
+  const touchEndX = useRef(null);
+
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = (e) => {
+    touchEndX.current = e.changedTouches[0].clientX;
+    detectSwipe();
+  };
+
+  const detectSwipe = () => {
+    if (touchStartX.current && touchEndX.current) {
+      const swipeDistance = touchEndX.current - touchStartX.current;
+
+      if (swipeDistance > 50) {
+        // ✅ If swipe is right, navigate to /home
+        navigate("/");
+      }
+    }
+  };
+  useEffect(() => {
+    document.addEventListener("touchstart", handleTouchStart);
+    document.addEventListener("touchend", handleTouchEnd);
+
+    return () => {
+      document.removeEventListener("touchstart", handleTouchStart);
+      document.removeEventListener("touchend", handleTouchEnd);
+    };
+  }, []);
+
+
+
   let initialImages = [
     { url: "/Images/1.avif", top: "30%", left: "15%", Act: false },
     { url: "/Images/2.avif", top: "38%", left: "23%", Act: false },
@@ -233,13 +271,16 @@ gsap.from(".up h2",{
            </div>
     </div>
   </div>
+  <div id="page-two-lastbut">
+
+  </div>
 </div>
 <div id="page3">
-  
+
 </div>
 
       </div>
-      <Footer num={2}/>
+      
     </div>
   )
 }
