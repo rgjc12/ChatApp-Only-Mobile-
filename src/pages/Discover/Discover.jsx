@@ -54,11 +54,11 @@ function Discover() {
     if (touchStartX.current && touchEndX.current) {
       const swipeDistance = touchEndX.current - touchStartX.current;
 
-      if (swipeDistance > 25) {
+      if (swipeDistance > 50) {
         // ✅ If swipe is right, navigate to /home
         navigate("/");
       }
-      if (swipeDistance < -25) {
+      if (swipeDistance < -50) {
         // ✅ If swipe is right, navigate to /home
         navigate("/shorts");
       }
