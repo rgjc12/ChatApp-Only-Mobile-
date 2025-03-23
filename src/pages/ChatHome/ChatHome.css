@@ -27,3 +27,29 @@
     cursor: pointer;   
    
 }
+.chathometext{
+    position: absolute;
+    top: 24%;
+  height:18vh;
+  width: 100%; 
+ font-family: q1;
+ font-size: 6.2vh;
+ color: rgb(195, 194, 194);
+ mix-blend-mode: difference;
+}
+.chathometext h5{
+    margin:0 2vw;
+}
+h5 span {
+    color: whitesmoke;
+    animation-delay: 2s;
+    font-size: 9.35vh;
+    font-weight: 600;
+    mix-blend-mode: difference;
+  }
+  
+  .txt-rotate > .wrap {
+    border-right: 0.08em solid #666;
+    mix-blend-mode: difference;
+  }
+  
