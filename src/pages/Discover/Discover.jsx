@@ -56,11 +56,11 @@ function Discover() {
 
       if (swipeDistance > 50) {
         // ✅ If swipe is right, navigate to /home
-        navigate("/");
+        navigate("/shorts");
       }
       if (swipeDistance < -50) {
         // ✅ If swipe is right, navigate to /home
-        navigate("/shorts");
+        navigate("/");
       }
     }
   };
